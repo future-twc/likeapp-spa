@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>룰렛 게임</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>룰렛 게임</h1>
+
+  <p>참가자 이름 (쉼표로 구분):
+    <input type="text" id="participants" placeholder="예: 홍길동, 김철수, 박영희" style="width: 300px;">
+  </p>
+  <p class="error" id="error-msg"></p>
+
+  <button onclick="spinRoulette()">룰렛 돌리기!</button>
+
+  <div id="result"></div>
+  <div id="countdown" style="font-size: 32px; margin-top: 20px;"></div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

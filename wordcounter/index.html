@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글자수 세기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <textarea id="textInput" rows="10" cols="30" oninput="updateCounts()"></textarea>
+
+    <div class="counters">
+      글자수 (공백 포함): <span id="charWithSpaces">0</span><br>
+      글자수 (공백 제외): <span id="charWithoutSpaces">0</span><br>
+      공백 수: <span id="spacesCount">0</span><br>
+      줄 수: <span id="linesCount">1</span><br>
+      단어 수: <span id="wordsCount">0</span><br>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
