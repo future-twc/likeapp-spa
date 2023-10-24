@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>글자수 세기</title>
+  <title>룰렛 게임</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="container">
-    <textarea id="textInput" rows="10" cols="30" oninput="updateCounts()"></textarea>
+  <h1>룰렛 게임</h1>
 
-    <div class="counters">
-      글자수 (공백 포함): <span id="charWithSpaces">0</span><br>
-      글자수 (공백 제외): <span id="charWithoutSpaces">0</span><br>
-      공백 수: <span id="spacesCount">0</span><br>
-      줄 수: <span id="linesCount">1</span><br>
-      단어 수: <span id="wordsCount">0</span><br>
-    </div>
-  </div>
+  <p>참가자 이름 (쉼표로 구분):
+    <input type="text" id="participants" placeholder="예: 홍길동, 김철수, 박영희" style="width: 300px;">
+  </p>
+  <p class="error" id="error-msg"></p>
+
+  <button onclick="spinRoulette()">룰렛 돌리기!</button>
+
+  <div id="result"></div>
+  <div id="countdown" style="font-size: 32px; margin-top: 20px;"></div>
 
   <script src="script.js"></script>
 
